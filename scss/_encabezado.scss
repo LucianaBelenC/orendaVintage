@@ -1,0 +1,126 @@
+// header {
+//     position: sticky;
+//     .FondoNav {
+//         background-color: white;
+//         font-family: 'Lato', sans-serif;
+//         .margenesNav {
+//             padding: 0 7rem;
+//             .margenesNav img {
+//                 width: auto;
+//                 .nav-item a{
+//                     color:$negro !important;
+//                     &:hover{
+//                         font-weight: 700;
+//                     &:focus{
+//                         font-weight: 700;
+//                     }
+//                     }
+//                     .desplegableEstilos {
+//                         padding: 0;
+//                         border: solid 1px $marron;
+//                         border-radius: 0;
+//                         &:hover{
+//                             background-color:$marron;
+//                             color: white !important;
+//                         &:focus {
+//                             background-color:$marron;
+//                         }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }   
+
+// }
+
+// header {
+//     position: sticky;
+//     .FondoNav {
+//         background-color: white;
+//         font-family: 'Lato', sans-serif;
+//         .margenesNav {
+//             padding: 0 7rem;
+//             .margenesNav img {
+//                 width: auto;}
+//                 .nav-item {
+//                     .desplegableEstilos {
+//                         padding: 0;
+//                         border: solid 1px $marron;
+//                         border-radius: 0;
+//                         &:hover{
+//                             background-color:$marron;
+//                             color: white !important;
+//                         &:focus {
+//                             background-color:$marron;
+//                         }
+//                         }
+//                     }
+//                 }
+
+//                 }
+//                 .nav-item a{
+//                     color:$negro !important;
+//                     &:hover{
+//                         font-weight: 700;
+//                     &:focus{
+//                         font-weight: 700;
+//                     }
+//                     }
+
+
+//         }
+//     }   
+
+// }
+
+header {
+    position: sticky;
+
+    .FondoNav {
+        background-color: white;
+        font-family: 'Lato', sans-serif;
+
+        .margenesNav {
+            padding: 0 7rem;
+
+            img {
+                width: auto;
+            }
+
+            .nav-item {
+                .desplegableEstilos {
+                    padding: 0;
+                    border: solid 1px $marron;
+                    border-radius: 0;
+
+                    &:hover {
+                        background-color: $marron;
+                        color: white !important;
+
+                        &:focus {
+                            background-color: $marron;
+                        }
+                    }
+                }
+
+
+
+                a {
+                    color: $negro !important;
+
+                    &:hover {
+                        font-weight: 700;
+
+                        &:focus {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+}

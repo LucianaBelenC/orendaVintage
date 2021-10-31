@@ -1,0 +1,123 @@
+.ventajasReciclaje {
+    text-align: center;
+    height: 500px;
+    background-image: url(../multimedia/so-white.png);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.4fr 1fr;
+    grid-template-areas:
+        ".  tituloVentaja tituloVentaja tituloVentaja tituloVentaja ."
+        ".  variado sostenible barato etico .";
+
+    h2 {
+        grid-area: tituloVentaja;
+        color: $marron;
+        /* font-size:2rem; */
+        align-self: center;
+    }
+
+    p {
+        margin-top: 30px;
+    }
+
+    .variado {
+        grid-area: variado;
+        justify-self: center;
+    }
+
+    .sostenible {
+        grid-area: sostenible;
+        justify-self: center;
+    }
+
+    .barato {
+        grid-area: barato;
+        justify-self: center;
+    }
+
+    .etico {
+        grid-area: etico;
+        justify-self: center;
+    }
+
+    article {
+        width: 200px;
+        height: 250px;
+        padding-top: 30px;
+        border-radius: 10px;
+        border: solid 2px $celeste;
+        background-color: $celeste;
+        color: $marron;
+        text-align: center;
+        letter-spacing: 1px;
+
+        & :hover {
+            transform: scale(1.1);
+            color: $rosa;
+            font-weight: 700;
+            letter-spacing: 3px;
+            background-size: 1px;
+            transition: all 1s;
+            cursor: pointer;
+            transition-timing-function: ease-in-out;
+        }
+
+    }
+
+    div {
+        margin-top: 25px;
+
+        i {
+            font-size: 5rem;
+            border: none;
+            color: $marron;
+        }
+
+    }
+}
+
+.seccionConFrase {
+    height: 200px;
+
+    .frase {
+        text-align: center;
+        color: $rosa;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 800;
+        font-size: 1.8rem;
+        margin-top: 50px;
+        animation-duration: 5s
+    }
+}
+
+.seccionMusica {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas:
+        ". tituloMusica tituloMusica tituloMusica tituloMusica ."
+        ". spotify spotify spotify spotify palabrasMusica";
+
+    .tituloMusica {
+        grid-area: tituloMusica;
+        color: $marron;
+        text-align: left;
+        align-self: center;
+    }
+
+    .palabrasMusica {
+        grid-area: palabrasMusica;
+        align-self: flex-end;
+        padding-left: 20px;
+        color: $rosa;
+        font-size: 1rem;
+        letter-spacing: 5px;
+        margin: 20px 0 20px 0;
+    }
+
+    .spotify {
+        grid-area: spotify;
+    }
+}

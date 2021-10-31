@@ -1,0 +1,62 @@
+@media only screen and (max-width: 425px) {
+    h1 {
+        font-size: 2.7rem;
+        padding: none;
+        margin-top: 150px;}
+
+    h2 {
+        font-size: 1.3rem;}
+
+    footer {
+        margin-top: 20%;
+    }
+
+    .margenesNav {
+        padding: 3% !important;
+        img {
+            width: 133px;
+            height: auto;}
+        }  
+
+    // Seccion Proceso
+    
+    .seccionProceso {
+        img {margin-bottom: 0;}
+        .contenedorPadreProceso1 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 50px 0;
+
+            img {
+                width: 250px;
+            }
+
+            .hijoProceso {
+                width: 300px;
+                margin: 30px 0;
+                padding: 0;}
+        }
+
+        .contenedorPadreProceso2 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 250px;
+            }
+
+            .hijoProceso {
+                width: 300px; 
+                margin: 30px 0;
+                padding: 0;}
+        
+        }
+    }
+}
+

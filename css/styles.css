@@ -1,0 +1,750 @@
+/*---------ESTILOS GENERALES-----*/
+
+/*colores
+#3c3c3b
+#cb997e
+#c97e7f
+#ffe8d6*/
+
+*{  margin: 0; 
+    padding: 0;
+    box-sizing: border-box;} 
+
+html {
+    font-size: 62,5%;}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    color: #3c3c3b;
+    background-image: url(../multimedia/so-white.png);
+    font-family:'Lato', sans-serif;}
+
+header{
+    position: sticky;}
+
+.FondoNav{
+    background-color: white; 
+    font-family: 'Lato', sans-serif;}
+.nav-item a{
+    color: #3c3c3b !important;}
+.nav-item a:hover{
+    font-weight:700;}
+.nav-item a:focus{
+    font-weight:700;}
+.margenesNav {
+    padding: 0 7rem;}
+.margenesNav img {
+    width: auto;
+}
+.desplegableLetras a{
+    color:#3c3c3b;}
+.desplegableEstilos {
+    padding: 0;
+    border: solid 1px #c97e7e;
+    border-radius: 0;}
+.desplegableEstilos :hover {
+    background-color: #cb997e;
+    color: white !important;}
+.desplegableEstilos:focus {
+    background-color: #cb997e;}
+.desplegableEstilos li {
+    background-color: white;
+    padding: 0;}
+.iconosNav :hover {
+    color: #c97e7f;}
+.iconosNav :focus {
+    color: #c97e7f;}
+
+footer {
+    padding-top: 30px;
+    height: 450px;
+    background-color: #ffe8d6;
+    margin-top: 10rem;}
+
+footer h3 {
+    color: #c97e7f;
+    padding-bottom: 10px;}
+
+footer p {
+    color: #c97e7f;
+    font: 'Lato', sans-serif;
+    margin-bottom: 5px;}
+
+footer ul {
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    color: #c97e7f;
+    text-decoration: none;
+    padding: 0;}
+
+footer ul a {
+    text-decoration: none;
+    list-style: none;
+    color: #c97e7f;}
+
+footer li:hover a {
+    text-decoration: underline;
+    color: #c6807e;}
+
+footer li {
+    margin-bottom: 5px;}
+
+footer img {
+    margin-bottom: 15px;}
+
+.logoFooter ul {font-size: 0.9rem;}
+
+.piedePagina {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 2fr 1fr;
+    grid-template-rows: 2.1fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+    ". logo contacto mediosdepago ubicacion ."
+    ". derechosreserv derechosreserv derechosreserv derechosreserv .";}
+
+.logoFooter{
+    grid-area: logo;}
+
+.redesSociales {
+    grid-area: contacto;
+    margin-left: 30px;}
+.mediosdePago {
+    grid-area: mediosdepago;}
+
+.ubicacion {
+    grid-area: ubicacion;}
+
+.derechos {
+    grid-area: derechosreserv;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #c6807e;}
+
+h1{
+    color: #cb997e;
+    font-family: 'Playfair Display', serif center;
+    text-align: center;
+    font-weight: 800;
+    font-size: 5rem;
+    margin-top: 150px;
+    margin-bottom: 50px;}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem ;
+    color: #cb997e;}
+
+h3 {font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;}
+
+p {
+    font-family: 'Lato', sans-serif;}
+
+/* button {
+    background: #d9a7c7; 
+    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  
+    background: linear-gradient(to right, #fffcdc, #d9a7c7); 
+    color: #cb997e;
+    font-weight: 500;
+    width: 7rem;
+    height: 2.5rem;
+    border: solid 1px;
+    font-family:'Lato', sans-serif;
+    border-color: #cb997e !important;}
+
+button :hover{
+    border-color: #cb997e;
+    color: #c6807e;} */
+
+.botones {
+    border-color: #cb997e;
+    color: #c6807e;}
+
+.botones:hover {
+    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  
+    background: linear-gradient(to right, #fffcdc, #d9a7c7); 
+    border-color: #cb997e;}
+
+/*-----------ESTILOS INICIO-------------*/
+
+.ventajasReciclaje {
+    text-align: center;
+    height: 500px;
+    background-image:url(../multimedia/so-white.png);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.4fr 1fr;
+    grid-template-areas:
+    ".  tituloVentaja tituloVentaja tituloVentaja tituloVentaja ."
+    ".  variado sostenible barato etico .";}
+
+.ventajasReciclaje article {
+    width: 200px;
+    height: 250px;
+    padding-top: 30px;
+    border-radius: 10px;
+    border: solid 2px #d8e2dc;
+    background-color: #d8e2dc;
+    color:#cb997e; 
+    text-align: center; 
+    letter-spacing: 1px;}
+
+.ventajasReciclaje article :hover {
+    transform: scale(1.1);
+    color: #c97e7f;
+    font-weight: 700;
+    letter-spacing: 3px;
+    background-size: 1px;
+    transition: all 1s;
+    cursor: pointer;
+    transition-timing-function: ease-in-out;}
+
+.ventajasReciclaje p{
+    margin-top: 30px;}
+
+.ventajasReciclaje div i {
+    font-size: 5rem;
+    border: none;
+    color: #cb997e;}
+
+.ventajasReciclaje div {
+    margin-top: 25px;}
+
+.ventajasReciclaje h2 {
+    grid-area: tituloVentaja;
+    color: #cb997e;
+    /* font-size:2rem; */
+    align-self: center;}
+
+.variado {
+    grid-area: variado;
+    justify-self: center;}
+
+.sostenible {
+    grid-area: sostenible;
+    justify-self: center;}
+
+.barato {
+    grid-area: barato;
+    justify-self: center;}
+
+.etico {
+    grid-area: etico;
+    justify-self: center;}
+
+
+.seccionConFrase {
+    height: 200px;}
+    
+.frase { 
+    text-align: center;
+    color: #c6807e;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-top: 50px;
+    animation-duration: 5s}
+
+    .seccionMusica {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas:
+        ". tituloMusica tituloMusica tituloMusica tituloMusica ."
+        ". spotify spotify spotify spotify palabrasMusica";}
+    
+
+.tituloMusica {
+    grid-area: tituloMusica;
+    color: #cb997e;
+    text-align: left;
+    align-self: center;}
+
+.palabrasMusica {
+    grid-area: palabrasMusica;
+    align-self: flex-end;
+    padding-left: 20px;
+    color: #c97e7f;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    margin: 20px 0 20px 0;}
+
+.spotify {
+    grid-area: spotify;}
+
+.seccionBotones {
+    display: grid;
+    height: 150px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". . novedades novedades . .";}
+
+.novedades {
+    grid-area: novedades;
+    background-color: #d8e2dc;
+    border: 50px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top:70px;}
+
+
+/*---------ESTILOS PRENDAS------------*/
+.seccionProductos{
+    padding-left: 300px;
+    padding-right: 300px;}
+
+.seccionProductos p {
+    font-size: 1rem;
+    font-weight: 500;}
+
+.seccionProductos ul{
+    border-bottom: solid #cb997e 1px;
+    padding: 10px;}
+
+.seccionProductos li {
+    display: inline-block;
+    list-style: none;
+    font-family: 'Lato', sans-serif;}
+
+.seccionProductos  a{
+    list-style: none;
+    text-decoration: none;
+    color: #3c3c3b;}
+
+.seccionProductos li:hover a{
+    color: #c97e7f;
+    font-weight: 800;}
+
+.seccionProductos h3 {
+    font-family: 'Lato', sans-serif;
+    color: #c6807e;}
+
+.contenedorDeProductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;}
+
+.contenedorDeProductos div {
+    margin: 20px;
+    cursor: pointer;}
+
+.contenedorDeProductos div :hover {
+    transform: scale(1.1,1.1);
+    transition: 2s;
+    filter: brightness(70%);
+    -webkit-filter: brightness(70%);
+    -moz-filter: brightness(70%);}
+
+
+/*--------ESTILOS MEDIDAS-----------*/ 
+
+.seccionComoMedirse {
+    margin:0 13%;
+    text-decoration: none;}
+
+.seccionComoMedirse h3{
+    font-family:'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;}
+
+.parrafoComoMedirse {
+    margin-bottom: 50px;}
+
+.parrafoComoMedirse {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 400;}
+
+.especificacionesMedidas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;}
+
+.especificacionesMedidas h3{
+    color: #c97e7f;}
+
+.especificacionesHijo2 {
+    width: 600px;
+    /* height: 470px; */
+    height: 27rem;
+    background-color: #ffe8d6;
+    padding: 20px 20px 20px 25px;
+    border-top: dashed 2px #cb997e;}
+
+.especificacionesMedidas li {
+    margin: 10px 0;}
+
+.tituloTablas {
+    margin: 3% 0;}
+
+.tablaMiEstilo {
+    margin: 0 13%}
+
+.tabla2 {
+    grid-area: tabla;
+    text-align: center;
+    color: #c97e7f;
+    font-family:'Lato', sans-serif;}
+
+.tabla2 td {
+    color: #3c3c3b;
+    padding-right: 0;
+    margin-right:0;}
+
+
+/*--------ESTILOS PROCESO----------*/
+
+ol {
+    list-style-type: upper-roman;}
+
+.seccionProceso {
+    padding-left: 300px;
+    padding-right: 300px;}
+
+.seccionProceso h3 {
+    font-family:'Lato', sans-serif;
+    font-weight:800;}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    color: #cb997e;}
+
+.contenedorPadreProceso1 p {
+    text-align: justify;}
+
+.contenedorPadreProceso2 p {
+    text-align: justify;}
+
+.seccionProceso img {
+    width: 300px;
+    margin-bottom: 30px;
+    border: dashed 2px #cb997e;
+    border-radius: 100%;
+    padding: 10px;}
+
+.contenedorPadreProceso1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;}
+
+.contenedorPadreProceso2 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;}
+
+.contenedorPadreProceso1 img{
+    width: 350px;}
+
+.hijoProceso{
+    width: 500px;
+    margin: 0 0 25px 0;
+    padding: 25px;}
+
+
+/*--------ESTILOS CONTACTO-----------*/
+
+.tituloFormulario {
+    color: #cb997e;
+    margin-top: 3rem;}
+
+.h3Contact {font-weight: 600;}
+
+.formulario {
+    padding-right: 250px;
+    padding-left: 250px;}
+
+.formulariocontacto2{
+    margin-top: 3rem;}
+
+.formularioContacto {
+    color: #c97e7f;
+    background-color: #ffe8d6;
+    padding: 40px;
+    border-radius: 10px;}
+
+.formularioContacto input{
+    border-radius: 10px;
+    border-style: solid 1px;
+    border-color: #c97e7f;
+    margin-bottom: 1rem;}
+
+.row {margin-right: 0;}
+
+.formularioContacto input:focus {
+    border-color: #c97e7f;
+    box-shadow: none;
+    background-color: #d8e2dc;}
+
+.checkboxContact {margin-top: 1rem;}
+
+.checkboxContact input:hover{
+    background-color: #c6807e;}
+
+.checkboxContact input:checked {
+    background-color: #c97e7e;}
+
+.divBoton {padding-left: 15rem;}
+
+/* .checkboxContact input:active {
+    background-color: aqua;
+} */
+
+form {margin-bottom: 100px;}
+
+
+
+
+/* ------------------ RESPONSIVE ---------------- */
+
+
+            /* TAMAÑO TABLET */
+/*----------------------------------------------*/
+    @media only screen and (max-width: 768px) {
+/*----------------------------------------------*/
+
+/* Estilos Generales */
+
+    .margenesNav img {
+        width: 133px;
+        height: auto;}
+
+    h1 {
+        font-size: 3rem;
+        padding: none;}
+
+    h2 {
+        font-size: 1.5rem;}
+
+    p {
+        font-size: 1rem;}
+
+    footer {
+        height: 1000px;}
+    footer h3{
+        padding: 0;}
+
+    .piedePagina {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 1fr 0.8fr 1fr 1.5fr 0.5fr;
+        gap: 15px 0px;
+        justify-items: center;
+        grid-template-areas:
+        ". logo ."
+        ". contacto ."
+        ". mediosdepago ."
+        ". ubicacion ."
+        ". derechosreserv .";}
+
+    .logoFooter {
+        text-align: center;}
+
+    .logoFooter img {
+        width: 142px;
+        height: 64px;}
+
+    .redesSociales {
+        text-align: center;
+        margin-left: 0;}
+
+    .mediosdePago {
+        text-align: center;}
+
+    .ubicacion {
+        text-align: center;}
+
+/* Seccion Inicio */
+
+    .ventajasReciclaje {
+    text-align: center;
+    margin-top: 10%;
+    height: 500px;
+    background-image:url(../multimedia/so-white.png);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px 0px;
+    grid-template-areas:
+        ". tituloVentaja tituloVentaja tituloVentaja tituloVentaja ."
+        ". variado variado sostenible sostenible ."
+        ". barato barato etico etico .";}
+
+    .ventajasReciclaje h2 {
+        grid-area: tituloVentaja;
+        color: #cb997e;
+        /* font-size:2rem; */
+        align-self: center;}
+
+    .seccionConFrase {
+    margin: 30% 5% 5% 5%;
+    height: 100px;}
+
+    .frase {
+        font-size: 1.5rem;}
+
+
+/* Seccion Medidas */
+
+    .especificacionesMedidas img {
+        width: 100%;}
+
+    .especificacionesHijo2 {
+        width: 400px;
+        height: 540px;
+        margin: 2rem 0;}
+
+    .especificacionesMedidas {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;}
+    
+/* Seccion Proceso */
+    .seccionProceso {
+        margin: 0 5%;
+        padding: 0;}
+
+    .contenedorPadreProceso1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0;}
+
+    .contenedorPadreProceso2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;}
+
+    .hijoProceso {
+        width: 500px;
+        margin: 50px 0;
+        padding: 0;}
+
+    .seccionProceso img {
+        margin-bottom: 0;}}
+
+
+            /* TAMAÑO CELULAR */
+/*----------------------------------------------*/
+    @media only screen and (max-width: 425px) {
+/*----------------------------------------------*/
+    
+/* Estilos Generales */
+    
+    h1 {
+        font-size: 2.7rem;
+        padding: none;
+        margin-top: 150px;}
+
+    h2 {
+        font-size: 1.3rem;}
+
+    .piedePagina {
+        margin-top: 20%;}
+
+    .margenesNav {
+        padding: 3%;}
+    
+    .margenesNav img {
+        width: 133px;
+        height: auto;}
+
+/* Seccion Incio */
+
+.ventajasReciclaje {
+    text-align: center;
+    margin: 10% 5% 0 5%;
+    height: 1000px;
+    background-image:url(../multimedia/so-white.png);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px 0px;
+    grid-template-areas:
+        "tituloVentaja"
+        "variado"
+        "sostenible"
+        "barato"
+        "etico";}
+
+    .ventajasReciclaje div i {
+        font-size: 4rem;
+        border: none;
+        color: #cb997e;}
+
+    .ventajasReciclaje article {
+        height: 200px;
+        padding-top: 20px;
+    }
+      
+
+/*Seccion Medidas*/
+
+    .seccionComoMedirse {
+    margin: 0 7%}
+
+    .tablaMiEstilo {
+    margin: 0 3%;}
+
+    .tituloTablas {
+    margin-bottom: 4%;}
+
+/* Seccion Proceso */
+.contenedorPadreProceso1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;}
+
+.contenedorPadreProceso2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;}
+
+.hijoProceso {
+    width: 300px;
+    margin: 30px 0;
+    padding: 0;}
+
+.seccionProceso img {
+    margin-bottom: 0;}
+
+.contenedorPadreProceso1 img{
+    width: 250px;}
+
+.contenedorPadreProceso2 img{
+    width: 250px;}
+
+}

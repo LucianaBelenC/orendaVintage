@@ -1,0 +1,49 @@
+.fondoError {
+    background-image: none;
+    background-color: $beige;
+
+    section {
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". . error error . .";
+    }
+
+    .error {
+        grid-area: error;
+        text-align: center;
+
+        h1 {
+            margin: 0;
+            font-size: 7rem;
+            font-family: $tipo-1;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 3rem;
+            font-family: $tipo-2;
+            font-weight: 800;
+            margin-top: 20px;
+            color: $negro;
+        }
+
+        p {
+            margin: 0;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .pageNotFound {
+            font-size: 1.5rem;
+            color: $marron;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+    }
+}

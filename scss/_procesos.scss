@@ -1,0 +1,64 @@
+.seccionProceso {
+    margin: 0 13%;
+
+    h3{
+        font-family: $tipo-1;
+        font-weight: 800;
+        color: $negro;}
+    
+    h4 {
+        font-family: $tipo-1;
+        letter-spacing: 5px;
+        font-weight: 400;
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+        color: $marron;}
+
+    img {
+        width: 300px;
+        margin-bottom: 30px;
+        border: dashed 2px $marron;
+        border-radius: 100%;
+        padding: 10px;}
+
+        .contenedorPadreProceso1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 350px;}
+
+            .hijoProceso {
+                width: 500px;
+                margin: 0 0 25px 0;
+                padding: 25px;
+
+                p {
+                    text-align: justify;}
+                }
+        }
+
+        .contenedorPadreProceso2 {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            .hijoProceso {
+                width: 500px;
+                margin: 0 0 25px 0;
+                padding: 25px;
+
+            
+        p{
+            text-align: justify;
+            color: $negro;}}
+        
+        }
+
+        
+    }

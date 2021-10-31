@@ -1,0 +1,89 @@
+footer {
+    padding-top: 30px;
+    height: 450px;
+    background-color: $beige;
+    margin-top: 10rem;
+    // estrudctura
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 2fr 1fr;
+    grid-template-rows: 2.1fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". logo contacto mediosdepago ubicacion ."
+        ". derechosreserv derechosreserv derechosreserv derechosreserv .";
+
+    .logoFooter {
+        grid-area: logo;
+
+        ul {
+            font-size: 0.9rem;
+        }
+    }
+
+    .redesSociales {
+        grid-area: contacto;
+        margin-left: 30px;
+    }
+
+    .mediosdePago {
+        grid-area: mediosdepago;
+    }
+
+    .ubicacion {
+        grid-area: ubicacion;
+    }
+
+    .derechos {
+        grid-area: derechosreserv;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        color: #c6807e;
+    }
+
+    h2 {
+        color: $marron;
+        font-family: $tipo-1;
+        text-align: center;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    h3 {
+        color: $rosa;
+        padding-bottom: 10px;
+    }
+
+    p {
+        color: $rosa;
+        font-family: $tipo-1;
+        margin-bottom: 5px;
+    }
+
+    img {
+        margin-bottom: 15px;
+    }
+
+    ul {
+        list-style: none;
+        font-family: $tipo-1;
+        color: $rosa;
+        text-decoration: none;
+        padding: 0;
+
+        a {
+            text-decoration: none;
+            list-style: none;
+            color: $rosa;
+        }
+
+        li {
+            margin-bottom: 5px;
+
+            &:hover a {
+                text-decoration: underline;
+                color: $marron;
+            }
+        }
+    }
+}

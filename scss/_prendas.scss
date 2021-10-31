@@ -1,0 +1,59 @@
+.seccionProductos {
+    padding-left: 300px;
+    padding-right: 300px;
+
+    h3 {
+        font-family: 'Lato', sans-serif;
+        color: $marron;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    ul {
+        border-bottom: solid $marron 1px;
+        padding: 10px;
+    }
+
+    li {
+        display: inline-block;
+        list-style: none;
+        font-family: 'Lato', sans-serif;
+    }
+
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: $negro;
+    }
+
+    li:hover a {
+        color: $rosa;
+        font-weight: 800;
+    }
+
+    .contenedorDeProductos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        div {
+            margin: 20px;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1, 1.1);
+                transition: 2s;
+                filter: brightness(70%);
+                -webkit-filter: brightness(70%);
+                -moz-filter: brightness(70%);
+            }
+
+
+        }
+    }
+
+}

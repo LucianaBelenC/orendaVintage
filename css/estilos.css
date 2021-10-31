@@ -1,0 +1,501 @@
+header {
+  position: sticky; }
+  header .FondoNav {
+    background-color: white;
+    font-family: 'Lato', sans-serif; }
+    header .FondoNav .margenesNav {
+      padding: 0 7rem; }
+      header .FondoNav .margenesNav img {
+        width: auto; }
+      header .FondoNav .margenesNav .nav-item .desplegableEstilos {
+        padding: 0;
+        border: solid 1px #cb997e;
+        border-radius: 0; }
+        header .FondoNav .margenesNav .nav-item .desplegableEstilos:hover {
+          background-color: #cb997e;
+          color: white !important; }
+          header .FondoNav .margenesNav .nav-item .desplegableEstilos:hover:focus {
+            background-color: #cb997e; }
+      header .FondoNav .margenesNav .nav-item a {
+        color: #3c3c3b !important; }
+        header .FondoNav .margenesNav .nav-item a:hover {
+          font-weight: 700; }
+          header .FondoNav .margenesNav .nav-item a:hover:focus {
+            font-weight: 700; }
+
+.seccionProceso {
+  margin: 0 13%; }
+  .seccionProceso h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    color: #3c3c3b; }
+  .seccionProceso h4 {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    color: #cb997e; }
+  .seccionProceso img {
+    width: 300px;
+    margin-bottom: 30px;
+    border: dashed 2px #cb997e;
+    border-radius: 100%;
+    padding: 10px; }
+  .seccionProceso .contenedorPadreProceso1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    .seccionProceso .contenedorPadreProceso1 img {
+      width: 350px; }
+    .seccionProceso .contenedorPadreProceso1 .hijoProceso {
+      width: 500px;
+      margin: 0 0 25px 0;
+      padding: 25px; }
+      .seccionProceso .contenedorPadreProceso1 .hijoProceso p {
+        text-align: justify; }
+  .seccionProceso .contenedorPadreProceso2 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    .seccionProceso .contenedorPadreProceso2 .hijoProceso {
+      width: 500px;
+      margin: 0 0 25px 0;
+      padding: 25px; }
+      .seccionProceso .contenedorPadreProceso2 .hijoProceso p {
+        text-align: justify;
+        color: #3c3c3b; }
+
+footer {
+  padding-top: 30px;
+  height: 450px;
+  background-color: #ffe8d6;
+  margin-top: 10rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 2fr 1fr;
+  grid-template-rows: 2.1fr 0.2fr;
+  gap: 0px 0px;
+  grid-template-areas: ". logo contacto mediosdepago ubicacion ." ". derechosreserv derechosreserv derechosreserv derechosreserv ."; }
+  footer .logoFooter {
+    grid-area: logo; }
+    footer .logoFooter ul {
+      font-size: 0.9rem; }
+  footer .redesSociales {
+    grid-area: contacto;
+    margin-left: 30px; }
+  footer .mediosdePago {
+    grid-area: mediosdepago; }
+  footer .ubicacion {
+    grid-area: ubicacion; }
+  footer .derechos {
+    grid-area: derechosreserv;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #c6807e; }
+  footer h2 {
+    color: #cb997e;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem; }
+  footer h3 {
+    color: #c97e7f;
+    padding-bottom: 10px; }
+  footer p {
+    color: #c97e7f;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 5px; }
+  footer img {
+    margin-bottom: 15px; }
+  footer ul {
+    list-style: none;
+    font-family: "Lato", sans-serif;
+    color: #c97e7f;
+    text-decoration: none;
+    padding: 0; }
+    footer ul a {
+      text-decoration: none;
+      list-style: none;
+      color: #c97e7f; }
+    footer ul li {
+      margin-bottom: 5px; }
+      footer ul li:hover a {
+        text-decoration: underline;
+        color: #cb997e; }
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    padding: none;
+    margin-top: 150px; }
+  h2 {
+    font-size: 1.5rem; }
+  .margenesNav {
+    padding: 3%; }
+    .margenesNav img {
+      width: 133%;
+      height: auto; }
+  footer {
+    height: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 0.8fr 1fr 1.5fr 0.5fr;
+    gap: 15px 0px;
+    justify-items: center;
+    grid-template-areas: ". logo ." ". contacto ." ". mediosdepago ." ". ubicacion ." ". derechosreserv ."; }
+    footer h3 {
+      padding: 0; }
+    footer .logoFooter {
+      text-align: center; }
+      footer .logoFooter img {
+        width: 142px;
+        height: 64px; }
+    footer .logoFooter img {
+      width: 142px;
+      height: 64px; }
+    footer .redesSociales {
+      text-align: center;
+      margin-left: 0; }
+    footer .mediosdePago {
+      text-align: center; }
+    footer .ubicacion {
+      text-align: center; }
+  .seccionProceso img {
+    margin-bottom: 0; }
+  .seccionProceso .contenedorPadreProceso1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0; }
+    .seccionProceso .contenedorPadreProceso1 .hijoProceso {
+      width: 500px;
+      margin: 50px 0;
+      padding: 0; }
+  .seccionProceso .contenedorPadreProceso2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    .seccionProceso .contenedorPadreProceso2 .hijoProceso {
+      width: 500px;
+      margin: 50px 0;
+      padding: 0; } }
+
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 2.7rem;
+    padding: none;
+    margin-top: 150px; }
+  h2 {
+    font-size: 1.3rem; }
+  footer {
+    margin-top: 20%; }
+  .margenesNav {
+    padding: 3% !important; }
+    .margenesNav img {
+      width: 133px;
+      height: auto; }
+  .seccionProceso img {
+    margin-bottom: 0; }
+  .seccionProceso .contenedorPadreProceso1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0; }
+    .seccionProceso .contenedorPadreProceso1 img {
+      width: 250px; }
+    .seccionProceso .contenedorPadreProceso1 .hijoProceso {
+      width: 300px;
+      margin: 30px 0;
+      padding: 0; }
+  .seccionProceso .contenedorPadreProceso2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    .seccionProceso .contenedorPadreProceso2 img {
+      width: 250px; }
+    .seccionProceso .contenedorPadreProceso2 .hijoProceso {
+      width: 300px;
+      margin: 30px 0;
+      padding: 0; } }
+
+.fondoError {
+  background-image: none;
+  background-color: #ffe8d6; }
+  .fondoError section {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". . error error . ."; }
+  .fondoError .error {
+    grid-area: error;
+    text-align: center; }
+    .fondoError .error h1 {
+      margin: 0;
+      font-size: 7rem;
+      font-family: "Lato", sans-serif; }
+    .fondoError .error h2 {
+      margin: 0;
+      font-size: 3rem;
+      font-family: "Playfair Display", serif;
+      font-weight: 800;
+      margin-top: 20px;
+      color: #3c3c3b; }
+    .fondoError .error p {
+      margin: 0;
+      font-weight: bold;
+      font-size: 2rem; }
+    .fondoError .error .pageNotFound {
+      font-size: 1.5rem;
+      color: #cb997e; }
+    .fondoError .error button {
+      margin-top: 20px; }
+
+.seccionComoMedirse {
+  margin: 0 13%;
+  text-decoration: none; }
+  .seccionComoMedirse h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1rem; }
+  .seccionComoMedirse .parrafoComoMedirse {
+    margin-bottom: 50px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 400; }
+  .seccionComoMedirse .especificacionesMedidas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+    .seccionComoMedirse .especificacionesMedidas h3 {
+      color: #c97e7f; }
+    .seccionComoMedirse .especificacionesMedidas li {
+      margin: 10px 0; }
+    .seccionComoMedirse .especificacionesMedidas .especificacionesHijo2 {
+      width: 600px;
+      /* height: 470px; */
+      height: 27rem;
+      background-color: #ffe8d6;
+      padding: 20px 20px 20px 25px;
+      border-top: dashed 2px #cb997e; }
+
+.tituloTablas {
+  margin: 5% 0 1% 0; }
+
+.tablaMiEstilo {
+  margin: 0 13%; }
+  .tablaMiEstilo .tabla2 {
+    grid-area: tabla;
+    text-align: center;
+    color: #c97e7f;
+    font-family: 'Lato', sans-serif; }
+    .tablaMiEstilo .tabla2 td {
+      color: #3c3c3b;
+      padding-right: 0;
+      margin-right: 0; }
+
+.seccionProductos {
+  padding-left: 300px;
+  padding-right: 300px; }
+  .seccionProductos h3 {
+    font-family: 'Lato', sans-serif;
+    color: #cb997e; }
+  .seccionProductos p {
+    font-size: 1rem;
+    font-weight: 500; }
+  .seccionProductos ul {
+    border-bottom: solid #cb997e 1px;
+    padding: 10px; }
+  .seccionProductos li {
+    display: inline-block;
+    list-style: none;
+    font-family: 'Lato', sans-serif; }
+  .seccionProductos a {
+    list-style: none;
+    text-decoration: none;
+    color: #3c3c3b; }
+  .seccionProductos li:hover a {
+    color: #c97e7f;
+    font-weight: 800; }
+  .seccionProductos .contenedorDeProductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .seccionProductos .contenedorDeProductos div {
+      margin: 20px;
+      cursor: pointer; }
+      .seccionProductos .contenedorDeProductos div:hover {
+        transform: scale(1.1, 1.1);
+        transition: 2s;
+        filter: brightness(70%);
+        -webkit-filter: brightness(70%);
+        -moz-filter: brightness(70%); }
+
+.noPadding {
+  padding: 0; }
+
+.formulariocontacto2 {
+  margin-top: 3rem; }
+  .formulariocontacto2 .formularioContacto {
+    color: #c97e7f;
+    background-color: #ffe8d6;
+    padding: 40px;
+    border-radius: 10px; }
+    .formulariocontacto2 .formularioContacto .row {
+      margin-right: 0; }
+    .formulariocontacto2 .formularioContacto input {
+      border-radius: 10px;
+      border-style: solid 1px;
+      border-color: #c97e7f;
+      margin-bottom: 1rem; }
+      .formulariocontacto2 .formularioContacto input:focus {
+        border-color: #c97e7f;
+        box-shadow: none;
+        background-color: #d8e2dc; }
+    .formulariocontacto2 .formularioContacto .checkboxContact {
+      margin-top: 1rem; }
+      .formulariocontacto2 .formularioContacto .checkboxContact input:hover {
+        background-color: #cb997e; }
+      .formulariocontacto2 .formularioContacto .checkboxContact input:checked {
+        background-color: #cb997e; }
+    .formulariocontacto2 .formularioContacto .divBoton {
+      padding-left: 15rem; }
+    .formulariocontacto2 .formularioContacto form {
+      margin-bottom: 100px; }
+
+h3 {
+  font-weight: 600; }
+
+.ventajasReciclaje {
+  text-align: center;
+  height: 500px;
+  background-image: url(../multimedia/so-white.png);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 0.4fr 1fr;
+  grid-template-areas: ".  tituloVentaja tituloVentaja tituloVentaja tituloVentaja ." ".  variado sostenible barato etico ."; }
+  .ventajasReciclaje h2 {
+    grid-area: tituloVentaja;
+    color: #cb997e;
+    /* font-size:2rem; */
+    align-self: center; }
+  .ventajasReciclaje p {
+    margin-top: 30px; }
+  .ventajasReciclaje .variado {
+    grid-area: variado;
+    justify-self: center; }
+  .ventajasReciclaje .sostenible {
+    grid-area: sostenible;
+    justify-self: center; }
+  .ventajasReciclaje .barato {
+    grid-area: barato;
+    justify-self: center; }
+  .ventajasReciclaje .etico {
+    grid-area: etico;
+    justify-self: center; }
+  .ventajasReciclaje article {
+    width: 200px;
+    height: 250px;
+    padding-top: 30px;
+    border-radius: 10px;
+    border: solid 2px #d8e2dc;
+    background-color: #d8e2dc;
+    color: #cb997e;
+    text-align: center;
+    letter-spacing: 1px; }
+    .ventajasReciclaje article :hover {
+      transform: scale(1.1);
+      color: #c97e7f;
+      font-weight: 700;
+      letter-spacing: 3px;
+      background-size: 1px;
+      transition: all 1s;
+      cursor: pointer;
+      transition-timing-function: ease-in-out; }
+  .ventajasReciclaje div {
+    margin-top: 25px; }
+    .ventajasReciclaje div i {
+      font-size: 5rem;
+      border: none;
+      color: #cb997e; }
+
+.seccionConFrase {
+  height: 200px; }
+  .seccionConFrase .frase {
+    text-align: center;
+    color: #c97e7f;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-top: 50px;
+    animation-duration: 5s; }
+
+.seccionMusica {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas: ". tituloMusica tituloMusica tituloMusica tituloMusica ." ". spotify spotify spotify spotify palabrasMusica"; }
+  .seccionMusica .tituloMusica {
+    grid-area: tituloMusica;
+    color: #cb997e;
+    text-align: left;
+    align-self: center; }
+  .seccionMusica .palabrasMusica {
+    grid-area: palabrasMusica;
+    align-self: flex-end;
+    padding-left: 20px;
+    color: #c97e7f;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    margin: 20px 0 20px 0; }
+  .seccionMusica .spotify {
+    grid-area: spotify; }
+
+body {
+  background-image: url(../multimedia/so-white.png); }
+  body h1 {
+    color: #cb997e;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 5rem;
+    margin-top: 150px;
+    margin-bottom: 50px; }
+  body h2 {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #cb997e; }
+  body h3 {
+    font-family: "Lato", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600; }
+  body p {
+    font-family: "Lato", sans-serif; }
+  body .botones {
+    border-color: #cb997e;
+    color: #cb997e; }
+    body .botones:hover {
+      background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);
+      background: linear-gradient(to right, #fffcdc, #d9a7c7);
+      border-color: #cb997e; }

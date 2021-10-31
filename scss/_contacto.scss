@@ -1,0 +1,61 @@
+
+.noPadding {
+    padding: 0;
+}
+.formulariocontacto2 {
+    margin-top: 3rem;
+
+    .formularioContacto {
+        color: $rosa;
+        background-color: $beige;
+        padding: 40px;
+        border-radius: 10px;
+
+        .row {
+            margin-right: 0;
+        }
+
+        input {
+            border-radius: 10px;
+            border-style: solid 1px;
+            border-color: $rosa;
+            margin-bottom: 1rem;
+
+            &:focus {
+                border-color: $rosa;
+                box-shadow: none;
+                background-color: $celeste;
+            }
+        }
+
+        .checkboxContact {
+            margin-top: 1rem;
+
+            input {
+                &:hover {
+                    background-color: $marron;
+                }
+
+                &:checked {
+                    background-color: $marron;
+                }
+            }
+
+
+        }
+
+        .divBoton {
+            padding-left: 15rem;
+        }
+
+
+        form {
+            margin-bottom: 100px;
+        }
+    }
+
+}
+
+h3 {
+    font-weight: 600;
+}

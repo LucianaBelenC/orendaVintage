@@ -62,3 +62,23 @@
     
 
 }
+
+.seccionPreguntas {
+    margin-top: 5%;
+    .row {
+        --bs-gutter-x: 0; 
+        .tablaDePreguntas {
+            justify-content: center;
+            font-family: $tipo-1;
+            .acordion {
+                .pregunta {background-color: white;}
+                .collapse2 {
+                    background-color: $beige;
+                    :hover {
+                        border: shadow 0;
+                    }
+                }
+            }
+        }
+    }
+}

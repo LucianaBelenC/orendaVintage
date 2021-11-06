@@ -206,6 +206,20 @@ footer {
       padding-right: 0;
       margin-right: 0; }
 
+.seccionPreguntas {
+  margin-top: 5%; }
+  .seccionPreguntas .row {
+    --bs-gutter-x: 0; }
+    .seccionPreguntas .row .tablaDePreguntas {
+      justify-content: center;
+      font-family: "Lato", sans-serif; }
+      .seccionPreguntas .row .tablaDePreguntas .acordion .pregunta {
+        background-color: white; }
+      .seccionPreguntas .row .tablaDePreguntas .acordion .collapse2 {
+        background-color: #ffe8d6; }
+        .seccionPreguntas .row .tablaDePreguntas .acordion .collapse2 :hover {
+          border: shadow 0; }
+
 .seccionProductos {
   padding-left: 300px;
   padding-right: 300px; }

@@ -59,24 +59,33 @@
             margin-right: 0;
         }
     }
-    
+
 
 }
 
 .seccionPreguntas {
     margin-top: 5%;
+
+    img {
+        width: 12%;
+        height: auto;
+    }
+
     .row {
-        --bs-gutter-x: 0; 
+        --bs-gutter-x: 0;
+
         .tablaDePreguntas {
             justify-content: center;
             font-family: $tipo-1;
-            .acordion {
-                .pregunta {background-color: white;}
-                .collapse2 {
-                    background-color: $beige;
-                    :hover {
-                        border: shadow 0;
-                    }
+
+            .botonPreguntas {
+                color: $rosa;
+                background-color: white;
+                font-weight: 800;
+
+                &:focus {
+                    box-shadow: none;
+                    border-color: none;
                 }
             }
         }

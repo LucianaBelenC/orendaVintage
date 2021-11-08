@@ -5,11 +5,13 @@
     h3 {
         font-family: 'Lato', sans-serif;
         color: $marron;
+        margin-top: 3%;
     }
 
     p {
-        font-size: 1rem;
-        font-weight: 500;
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 0;
     }
 
     ul {
@@ -42,18 +44,38 @@
 
         div {
             margin: 20px;
-            cursor: pointer;
 
-            &:hover {
-                transform: scale(1.1, 1.1);
-                transition: 2s;
-                filter: brightness(70%);
-                -webkit-filter: brightness(70%);
-                -moz-filter: brightness(70%);
+            img {
+                &:hover {
+                    transform: scale(1.1, 1.1);
+                    transition: 2s;
+                    filter: brightness(70%);
+                    -webkit-filter: brightness(70%);
+                    -moz-filter: brightness(70%);
+                }
+            }
+        }
+
+        .detallesDelProducto {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            margin-top: 3%;
+
+            .botonEstilo{
+                margin-top: 5%;
+                a {
+                    color: $rosa;
+                    &:hover {
+                        color: white;
+                    }
+                }
             }
 
-
         }
+
+
     }
 
 }

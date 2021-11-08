@@ -14,7 +14,7 @@
     }
 
     .margenesNav {
-        padding: 3% !important;
+        padding: 3% 7% !important;
 
         img {
             width: 133px;
@@ -82,7 +82,10 @@
     // Seccion Medidas
 
     .seccionComoMedirse {
-        margin: 0 7%
+        margin: 0 7%;
+        p{
+            font-size: 1rem !important;
+        }
     }
 
     .tablaMiEstilo {

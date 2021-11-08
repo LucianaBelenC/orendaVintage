@@ -1,0 +1,76 @@
+header {
+    position: sticky;
+
+    .FondoNav {
+        background-color: white;
+        font-family: 'Lato', sans-serif;
+
+        .margenesNav {
+            padding: 0 7rem;
+
+            img {
+                width: auto;
+            }
+
+            .navbar-collapse {
+                .nav-item a {
+                    color: $negro !important;
+
+                    &:hover {
+                        color: $marron;
+                    }
+                    &:focus {
+                        color: $marron;
+                    }
+
+                    &:hover {
+                        font-weight: 700;
+
+                    }
+
+                    &:focus {
+                        font-weight: 700;
+                    }
+
+                    .iconosNav {
+                        
+                    &:hover {
+                        background-color: $rosa;
+                        color: white !important;
+                    }
+
+                    &:focus {
+                        background-color: $rosa;
+                    }
+                    }
+                }
+
+                .desplegableEstilos {
+                    padding: 0;
+                    border: solid 1px $marron;
+                    border-radius: 0;
+                    background-color: white;
+
+                    li {
+                        background-color: white;
+                        padding: 0;
+
+
+
+                        .dropdown-item {
+                            &:active {
+                                background-color: $rosa;
+                            }
+
+                            &:hover {
+                                background-color: $marron;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

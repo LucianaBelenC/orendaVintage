@@ -1,28 +1,3 @@
-header {
-  position: sticky; }
-  header .FondoNav {
-    background-color: white;
-    font-family: 'Lato', sans-serif; }
-    header .FondoNav .margenesNav {
-      padding: 0 7rem; }
-      header .FondoNav .margenesNav img {
-        width: auto; }
-      header .FondoNav .margenesNav .nav-item .desplegableEstilos {
-        padding: 0;
-        border: solid 1px #cb997e;
-        border-radius: 0; }
-        header .FondoNav .margenesNav .nav-item .desplegableEstilos:hover {
-          background-color: #cb997e;
-          color: white !important; }
-          header .FondoNav .margenesNav .nav-item .desplegableEstilos:hover:focus {
-            background-color: #cb997e; }
-      header .FondoNav .margenesNav .nav-item a {
-        color: #3c3c3b !important; }
-        header .FondoNav .margenesNav .nav-item a:hover {
-          font-weight: 700; }
-          header .FondoNav .margenesNav .nav-item a:hover:focus {
-            font-weight: 700; }
-
 .seccionProceso {
   margin: 0 13%; }
   .seccionProceso h3 {
@@ -96,7 +71,7 @@ footer {
     grid-area: derechosreserv;
     text-align: center;
     font-family: 'Lato', sans-serif;
-    color: #c6807e; }
+    color: #c97e7f; }
   footer h2 {
     color: #cb997e;
     font-family: "Lato", sans-serif;
@@ -126,7 +101,7 @@ footer {
       margin-bottom: 5px; }
       footer ul li:hover a {
         text-decoration: underline;
-        color: #cb997e; }
+        color: #c97e7f; }
 
 .fondoError {
   background-image: none;
@@ -208,27 +183,33 @@ footer {
 
 .seccionPreguntas {
   margin-top: 5%; }
+  .seccionPreguntas img {
+    width: 12%;
+    height: auto; }
   .seccionPreguntas .row {
     --bs-gutter-x: 0; }
     .seccionPreguntas .row .tablaDePreguntas {
       justify-content: center;
       font-family: "Lato", sans-serif; }
-      .seccionPreguntas .row .tablaDePreguntas .acordion .pregunta {
-        background-color: white; }
-      .seccionPreguntas .row .tablaDePreguntas .acordion .collapse2 {
-        background-color: #ffe8d6; }
-        .seccionPreguntas .row .tablaDePreguntas .acordion .collapse2 :hover {
-          border: shadow 0; }
+      .seccionPreguntas .row .tablaDePreguntas .botonPreguntas {
+        color: #c97e7f;
+        background-color: white;
+        font-weight: 800; }
+        .seccionPreguntas .row .tablaDePreguntas .botonPreguntas:focus {
+          box-shadow: none;
+          border-color: none; }
 
 .seccionProductos {
   padding-left: 300px;
   padding-right: 300px; }
   .seccionProductos h3 {
     font-family: 'Lato', sans-serif;
-    color: #cb997e; }
+    color: #cb997e;
+    margin-top: 3%; }
   .seccionProductos p {
-    font-size: 1rem;
-    font-weight: 500; }
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0; }
   .seccionProductos ul {
     border-bottom: solid #cb997e 1px;
     padding: 10px; }
@@ -249,49 +230,57 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between; }
     .seccionProductos .contenedorDeProductos div {
-      margin: 20px;
-      cursor: pointer; }
-      .seccionProductos .contenedorDeProductos div:hover {
+      margin: 20px; }
+      .seccionProductos .contenedorDeProductos div img:hover {
         transform: scale(1.1, 1.1);
         transition: 2s;
         filter: brightness(70%);
         -webkit-filter: brightness(70%);
         -moz-filter: brightness(70%); }
+    .seccionProductos .contenedorDeProductos .detallesDelProducto {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      margin-top: 3%; }
+      .seccionProductos .contenedorDeProductos .detallesDelProducto .botonEstilo {
+        margin-top: 5%; }
+        .seccionProductos .contenedorDeProductos .detallesDelProducto .botonEstilo a {
+          color: #c97e7f; }
+          .seccionProductos .contenedorDeProductos .detallesDelProducto .botonEstilo a:hover {
+            color: white; }
 
-.noPadding {
-  padding: 0; }
-
-.formulariocontacto2 {
-  margin-top: 3rem; }
-  .formulariocontacto2 .formularioContacto {
-    color: #c97e7f;
-    background-color: #ffe8d6;
-    padding: 40px;
-    border-radius: 10px; }
-    .formulariocontacto2 .formularioContacto .row {
-      margin-right: 0; }
-    .formulariocontacto2 .formularioContacto input {
-      border-radius: 10px;
-      border-style: solid 1px;
-      border-color: #c97e7f;
-      margin-bottom: 1rem; }
-      .formulariocontacto2 .formularioContacto input:focus {
+.row1 {
+  padding: 0;
+  margin: 0; }
+  .row1 .formulariocontacto2 {
+    margin-top: 3rem; }
+    .row1 .formulariocontacto2 .formularioContacto {
+      color: #c97e7f;
+      background-color: #ffe8d6;
+      padding: 40px;
+      border-radius: 10px; }
+      .row1 .formulariocontacto2 .formularioContacto .row {
+        margin-right: 0; }
+      .row1 .formulariocontacto2 .formularioContacto input {
+        border-radius: 10px;
+        border-style: solid 1px;
         border-color: #c97e7f;
-        box-shadow: none;
-        background-color: #d8e2dc; }
-    .formulariocontacto2 .formularioContacto .checkboxContact {
-      margin-top: 1rem; }
-      .formulariocontacto2 .formularioContacto .checkboxContact input:hover {
-        background-color: #cb997e; }
-      .formulariocontacto2 .formularioContacto .checkboxContact input:checked {
-        background-color: #cb997e; }
-    .formulariocontacto2 .formularioContacto .divBoton {
-      padding-left: 15rem; }
-    .formulariocontacto2 .formularioContacto form {
-      margin-bottom: 100px; }
-
-h3 {
-  font-weight: 600; }
+        margin-bottom: 1rem; }
+        .row1 .formulariocontacto2 .formularioContacto input:focus {
+          border-color: #c97e7f;
+          box-shadow: none;
+          background-color: #d8e2dc; }
+      .row1 .formulariocontacto2 .formularioContacto .checkboxContact {
+        margin-top: 1rem; }
+        .row1 .formulariocontacto2 .formularioContacto .checkboxContact input:hover {
+          background-color: #cb997e; }
+        .row1 .formulariocontacto2 .formularioContacto .checkboxContact input:checked {
+          background-color: #cb997e; }
+      .row1 .formulariocontacto2 .formularioContacto .divBoton {
+        padding-left: 15rem; }
+      .row1 .formulariocontacto2 .formularioContacto form {
+        margin-bottom: 100px; }
 
 .ventajasReciclaje {
   text-align: center;
@@ -379,6 +368,68 @@ h3 {
     margin: 20px 0 20px 0; }
   .seccionMusica .spotify {
     grid-area: spotify; }
+
+header {
+  position: sticky; }
+  header .FondoNav {
+    background-color: white;
+    font-family: 'Lato', sans-serif; }
+    header .FondoNav .margenesNav {
+      padding: 0 7rem; }
+      header .FondoNav .margenesNav img {
+        width: auto; }
+      header .FondoNav .margenesNav .navbar-collapse .nav-item a {
+        color: #3c3c3b !important; }
+        header .FondoNav .margenesNav .navbar-collapse .nav-item a:hover {
+          color: #cb997e; }
+        header .FondoNav .margenesNav .navbar-collapse .nav-item a:focus {
+          color: #cb997e; }
+        header .FondoNav .margenesNav .navbar-collapse .nav-item a:hover {
+          font-weight: 700; }
+        header .FondoNav .margenesNav .navbar-collapse .nav-item a:focus {
+          font-weight: 700; }
+        header .FondoNav .margenesNav .navbar-collapse .nav-item a .iconosNav:hover {
+          background-color: #c97e7f;
+          color: white !important; }
+        header .FondoNav .margenesNav .navbar-collapse .nav-item a .iconosNav:focus {
+          background-color: #c97e7f; }
+      header .FondoNav .margenesNav .navbar-collapse .desplegableEstilos {
+        padding: 0;
+        border: solid 1px #cb997e;
+        border-radius: 0;
+        background-color: white; }
+        header .FondoNav .margenesNav .navbar-collapse .desplegableEstilos li {
+          background-color: white;
+          padding: 0; }
+          header .FondoNav .margenesNav .navbar-collapse .desplegableEstilos li .dropdown-item:active {
+            background-color: #c97e7f; }
+          header .FondoNav .margenesNav .navbar-collapse .desplegableEstilos li .dropdown-item:hover {
+            background-color: #cb997e;
+            color: white; }
+
+h1 {
+  color: #cb997e;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-weight: 800;
+  font-size: 5rem;
+  margin-top: 150px;
+  margin-bottom: 50px; }
+
+h2 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #cb997e; }
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600; }
+
+p {
+  font-family: "Lato", sans-serif; }
 
 @media only screen and (max-width: 768px) {
   h1 {
@@ -514,7 +565,7 @@ h3 {
   footer {
     margin-top: 20%; }
   .margenesNav {
-    padding: 3% !important; }
+    padding: 3% 7% !important; }
     .margenesNav img {
       width: 133px;
       height: auto; }
@@ -552,6 +603,8 @@ h3 {
       align-items: center; }
   .seccionComoMedirse {
     margin: 0 7%; }
+    .seccionComoMedirse p {
+      font-size: 1rem !important; }
   .tablaMiEstilo {
     margin: 0 3%; }
   .tituloTablas {
@@ -603,26 +656,6 @@ h3 {
 
 body {
   background-image: url(../multimedia/so-white.png); }
-  body h1 {
-    color: #cb997e;
-    font-family: "Playfair Display", serif;
-    text-align: center;
-    font-weight: 800;
-    font-size: 5rem;
-    margin-top: 150px;
-    margin-bottom: 50px; }
-  body h2 {
-    font-family: "Lato", sans-serif;
-    text-align: center;
-    font-weight: 400;
-    font-size: 2rem;
-    color: #cb997e; }
-  body h3 {
-    font-family: "Lato", sans-serif;
-    font-size: 1.3rem;
-    font-weight: 600; }
-  body p {
-    font-family: "Lato", sans-serif; }
   body .botones {
     border-color: #cb997e;
     color: #cb997e; }

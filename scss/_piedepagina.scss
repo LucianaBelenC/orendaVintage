@@ -38,7 +38,7 @@ footer {
         grid-area: derechosreserv;
         text-align: center;
         font-family: 'Lato', sans-serif;
-        color: #c6807e;
+        color: $rosa;
     }
 
     h2 {
@@ -82,7 +82,7 @@ footer {
 
             &:hover a {
                 text-decoration: underline;
-                color: $marron;
+                color: $rosa;
             }
         }
     }

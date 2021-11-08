@@ -1,61 +1,59 @@
-
-.noPadding {
+.row1 {
     padding: 0;
-}
-.formulariocontacto2 {
-    margin-top: 3rem;
+    margin: 0;
 
-    .formularioContacto {
-        color: $rosa;
-        background-color: $beige;
-        padding: 40px;
-        border-radius: 10px;
+    .formulariocontacto2 {
+        margin-top: 3rem;
 
-        .row {
-            margin-right: 0;
-        }
-
-        input {
+        .formularioContacto {
+            color: $rosa;
+            background-color: $beige;
+            padding: 40px;
             border-radius: 10px;
-            border-style: solid 1px;
-            border-color: $rosa;
-            margin-bottom: 1rem;
 
-            &:focus {
-                border-color: $rosa;
-                box-shadow: none;
-                background-color: $celeste;
+            .row {
+                margin-right: 0;
             }
-        }
-
-        .checkboxContact {
-            margin-top: 1rem;
 
             input {
-                &:hover {
-                    background-color: $marron;
-                }
+                border-radius: 10px;
+                border-style: solid 1px;
+                border-color: $rosa;
+                margin-bottom: 1rem;
 
-                &:checked {
-                    background-color: $marron;
+                &:focus {
+                    border-color: $rosa;
+                    box-shadow: none;
+                    background-color: $celeste;
                 }
             }
 
+            .checkboxContact {
+                margin-top: 1rem;
 
+                input {
+                    &:hover {
+                        background-color: $marron;
+                    }
+
+                    &:checked {
+                        background-color: $marron;
+                    }
+                }
+
+
+            }
+
+            .divBoton {
+                padding-left: 15rem;
+            }
+
+
+            form {
+                margin-bottom: 100px;
+            }
         }
 
-        .divBoton {
-            padding-left: 15rem;
-        }
-
-
-        form {
-            margin-bottom: 100px;
-        }
     }
 
-}
-
-h3 {
-    font-weight: 600;
 }

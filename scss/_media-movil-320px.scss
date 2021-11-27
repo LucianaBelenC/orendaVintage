@@ -1,6 +1,7 @@
-@media only screen and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+
     h1 {
-        font-size: 2.7rem;
+        font-size: 2rem;
         padding: none;
         margin-top: 150px;
     }
@@ -10,14 +11,14 @@
     }
 
     footer {
-        margin-top: 20%;
+        margin: 20% 0 0 0;
     }
 
     .margenesNav {
-        padding: 3% 7% !important;
+        padding: 3% 3% !important;
 
         img {
-            width: 133px;
+            width: 133px !important;
             height: auto;
         }
     }
@@ -53,16 +54,31 @@
 
     }
 
-    .seccionMusica {
-        margin: 30% 13%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 2fr 1fr;
-        gap: 0px 0px;
-        grid-template-areas:
-            "tituloMusica"
-            "spotify"
-            "palabrasMusica";
+    .seccionConFrase {
+        margin-bottom: 3%;
+
+        .frase {
+            font-size: 1.2rem;
+        }
+    }
+
+    .seccionPackaging {
+        margin: 30% 0;
+
+        div {
+
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            img {
+                width: 250px;
+                height: auto;
+                margin: 3% 0;
+            }
+
+        }
+
     }
 
     // Seccion Prendas
@@ -83,17 +99,31 @@
 
     .seccionComoMedirse {
         margin: 0 7%;
-        p{
-            font-size: 1rem !important;
+
+        p {
+            font-size: 1rem;
+        }
+
+        .especificacionesMedidas {
+            .especificacionesHijo2 {
+                width: 300px;
+                height: auto;
+            }
         }
     }
 
     .tablaMiEstilo {
-        margin: 0 3%;
+        margin: 0;
+        padding: 0;
     }
 
     .tituloTablas {
         margin-bottom: 4%;
+    }
+
+    .seccionPreguntas {
+        margin-top: 15%;
+        padding: 15% 0;
     }
 
 
@@ -117,7 +147,7 @@
             }
 
             .hijoProceso {
-                width: 300px;
+                width: 250px;
                 margin: 30px 0;
                 padding: 0;
             }
@@ -135,7 +165,7 @@
             }
 
             .hijoProceso {
-                width: 300px;
+                width: 250px;
                 margin: 30px 0;
                 padding: 0;
             }
@@ -165,7 +195,7 @@
                 h1 {
                     font-size: 3.5rem;
                 }
-                
+
                 h2 {
                     font-size: 2.5rem;
                 }

@@ -1,0 +1,219 @@
+@media only screen and (min-width: 1024px) and (max-width: 1250px) {
+
+    // Estilos Generales
+    h1 {
+        font-size: 4rem;
+        padding: none;
+        margin: 150px 5% 5% 5%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .margenesNav {
+        padding: 3%;
+
+        img {
+            width: 133%;
+            height: auto;
+        }
+    }
+
+    footer {
+        padding: 7% 17% 0 17%;
+
+        h3 {
+            padding: 0;
+        }
+
+        height: 30%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1.5fr 0.3fr;
+        gap: 0px 0px;
+        grid-template-areas: "logo contacto"
+        "mediosdepago ubicacion"
+        "derechosreserv derechosreserv";
+
+
+        .logoFooter {
+            text-align: left;
+
+            img {
+                width: 142px;
+                height: 64px;
+            }
+        }
+
+        .logoFooter img {
+            width: 142px;
+            height: 64px;
+        }
+
+        .redesSociales {
+            text-align: left;
+            margin-left: 0;
+        }
+
+        .mediosdePago {
+            text-align: left;
+        }
+
+        .ubicacion {
+            text-align: left;
+            margin-bottom: 5%;
+        }
+    }
+
+
+
+    // Seccion Inicio
+
+    .ventajasReciclaje {
+        text-align: center;
+        margin-top: 10%;
+        height: 500px;
+        background-image: url(../multimedia/so-white.png);
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px 0px;
+        grid-template-areas:
+            ". tituloVentaja tituloVentaja tituloVentaja tituloVentaja ."
+            ". variado variado sostenible sostenible ."
+            ". barato barato etico etico .";
+
+        h2 {
+            grid-area: tituloVentaja;
+            color: $marron;
+            /* font-size:2rem; */
+            align-self: center;
+        }
+    }
+
+    .seccionConFrase {
+        margin: 20% 5% 15% 5%;
+        height: 100px;
+
+        .frase {
+            font-size: 1.5rem;
+        }
+    }
+
+    .seccionPackaging {
+
+        div {
+
+            img {
+                width: 200px;
+                height: auto;
+                margin: 3% 1px;
+            }
+        }
+
+    }
+
+    // Seccion Prendas
+
+    .seccionProductos {
+        margin: 0 7%;
+        padding: 0;
+
+        .contenedorDeProductos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    // Seccion Medidas
+
+    .seccionComoMedirse {
+
+        .especificacionesMedidas {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            img {
+                width: 100%;
+            }
+
+            .especificacionesHijo2 {
+                width: 400px;
+                height: 540px;
+                margin: 2rem 0;
+            }
+        }
+    }
+
+    // Seccion Proceso
+    .seccionProceso {
+        img {
+            margin-bottom: 0;
+        }
+
+        .contenedorPadreProceso1 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 50px 0;
+
+            .hijoProceso {
+                width: 500px;
+                margin: 50px 0;
+                padding: 0;
+            }
+        }
+
+        .contenedorPadreProceso2 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            .hijoProceso {
+                width: 500px;
+                margin: 50px 0;
+                padding: 0;
+            }
+        }
+
+    }
+
+    // Pagina de Error 404
+
+    .fondoError {
+        margin: 10% 7%;
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "error";
+
+            .error {
+                img {
+                    width: 400px;
+                    height: auto;
+                }
+            }
+        }
+
+    }
+
+
+
+
+
+}

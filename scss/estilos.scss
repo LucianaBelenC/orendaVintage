@@ -8,11 +8,16 @@
 @import "inicio";
 @import "2encabezado";
 @import "titulos";
-@import "media-tablet";
-@import "media-celular";
+@import "media-tablet-768px";
+@import "media-movil-320px";
+@import "media-tablet-769px-1023px";
+@import "media-portatil-1024px-1439px";
+@import "media-portatill-1251px-1500px";
+@import "media-movilm-375px-767px";
 
 body {
     background-image: url(../multimedia/so-white.png);
+    h2 {font-weight: 800;}
     
 .botones {
     border-color: $marron;
@@ -25,4 +30,5 @@ body {
         }
     }
 }
+
 

@@ -16,7 +16,8 @@
     margin-bottom: 30px;
     border: dashed 2px #cb997e;
     border-radius: 100%;
-    padding: 10px; }
+    padding: 10px;
+    animation-duration: 3s; }
   .seccionProceso .contenedorPadreProceso1 {
     display: flex;
     flex-direction: row;
@@ -160,7 +161,6 @@ footer {
       margin: 10px 0; }
     .seccionComoMedirse .especificacionesMedidas .especificacionesHijo2 {
       width: 600px;
-      /* height: 470px; */
       height: 27rem;
       background-color: #ffe8d6;
       padding: 20px 20px 20px 25px;
@@ -182,7 +182,9 @@ footer {
       margin-right: 0; }
 
 .seccionPreguntas {
-  margin-top: 5%; }
+  margin-top: 5%;
+  background-color: #d8e2dc;
+  padding: 5% 0; }
   .seccionPreguntas img {
     width: 12%;
     height: auto; }
@@ -249,6 +251,8 @@ footer {
           color: #c97e7f; }
           .seccionProductos .contenedorDeProductos .detallesDelProducto .botonEstilo a:hover {
             color: white; }
+          .seccionProductos .contenedorDeProductos .detallesDelProducto .botonEstilo a:focus {
+            box-shadow: none; }
 
 .row1 {
   padding: 0;
@@ -278,7 +282,7 @@ footer {
         .row1 .formulariocontacto2 .formularioContacto .checkboxContact input:checked {
           background-color: #cb997e; }
       .row1 .formulariocontacto2 .formularioContacto .divBoton {
-        padding-left: 15rem; }
+        padding-left: 0; }
       .row1 .formulariocontacto2 .formularioContacto form {
         margin-bottom: 100px; }
 
@@ -293,7 +297,6 @@ footer {
   .ventajasReciclaje h2 {
     grid-area: tituloVentaja;
     color: #cb997e;
-    /* font-size:2rem; */
     align-self: center; }
   .ventajasReciclaje p {
     margin-top: 30px; }
@@ -347,30 +350,24 @@ footer {
     margin-top: 50px;
     animation-duration: 5s; }
 
-.seccionMusica {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 0.5fr 0.5fr;
-  grid-template-areas: ". tituloMusica tituloMusica tituloMusica tituloMusica ." ". spotify spotify spotify spotify palabrasMusica"; }
-  .seccionMusica .tituloMusica {
-    grid-area: tituloMusica;
-    color: #cb997e;
-    text-align: left;
-    align-self: center; }
-  .seccionMusica .palabrasMusica {
-    grid-area: palabrasMusica;
-    align-self: flex-end;
-    padding-left: 20px;
-    color: #c97e7f;
-    font-size: 1rem;
-    letter-spacing: 5px;
-    margin: 20px 0 20px 0; }
-  .seccionMusica .spotify {
-    grid-area: spotify; }
+.seccionPackaging {
+  background-color: #d8e2dc;
+  padding: 5% 0; }
+  .seccionPackaging p {
+    text-align: center;
+    padding: 0 13%;
+    font-size: 1rem; }
+  .seccionPackaging div {
+    margin: 3% 13% 0 13%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .seccionPackaging div img {
+      animation-duration: 5s; }
 
 header {
-  position: sticky; }
+  position: sticky;
+  z-index: 600; }
   header .FondoNav {
     background-color: white;
     font-family: 'Lato', sans-serif; }
@@ -489,17 +486,16 @@ p {
     height: 100px; }
     .seccionConFrase .frase {
       font-size: 1.5rem; }
-  .seccionMusica {
-    margin: 10% 13%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 2fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas: "tituloMusica" "spotify" "palabrasMusica"; }
-    .seccionMusica .tituloMusica {
-      text-align: center; }
-    .seccionMusica .palabrasMusica {
-      text-align: center; }
+  .seccionPackaging {
+    margin: 30% 0; }
+    .seccionPackaging div {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .seccionPackaging div img {
+        width: 300px;
+        height: auto;
+        margin: 3% 0; }
   .seccionProductos {
     margin: 0 7%;
     padding: 0; }
@@ -555,19 +551,19 @@ p {
         width: 400px;
         height: auto; } }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 374px) {
   h1 {
-    font-size: 2.7rem;
+    font-size: 2rem;
     padding: none;
     margin-top: 150px; }
   h2 {
     font-size: 1.3rem; }
   footer {
-    margin-top: 20%; }
+    margin: 20% 0 0 0; }
   .margenesNav {
-    padding: 3% 7% !important; }
+    padding: 3% 3% !important; }
     .margenesNav img {
-      width: 133px;
+      width: 133px !important;
       height: auto; }
   .ventajasReciclaje {
     text-align: center;
@@ -586,13 +582,422 @@ p {
         font-size: 4rem;
         border: none;
         color: #cb997e; }
-  .seccionMusica {
-    margin: 30% 13%;
+  .seccionConFrase {
+    margin-bottom: 3%; }
+    .seccionConFrase .frase {
+      font-size: 1.2rem; }
+  .seccionPackaging {
+    margin: 30% 0; }
+    .seccionPackaging div {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .seccionPackaging div img {
+        width: 250px;
+        height: auto;
+        margin: 3% 0; }
+  .seccionProductos {
+    margin: 0 7%;
+    padding: 0; }
+    .seccionProductos .contenedorDeProductos {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center; }
+  .seccionComoMedirse {
+    margin: 0 7%; }
+    .seccionComoMedirse p {
+      font-size: 1rem; }
+    .seccionComoMedirse .especificacionesMedidas .especificacionesHijo2 {
+      width: 300px;
+      height: auto; }
+  .tablaMiEstilo {
+    margin: 0;
+    padding: 0; }
+  .tituloTablas {
+    margin-bottom: 4%; }
+  .seccionPreguntas {
+    margin-top: 15%;
+    padding: 15% 0; }
+  .seccionProceso img {
+    margin-bottom: 0; }
+  .seccionProceso .contenedorPadreProceso1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0; }
+    .seccionProceso .contenedorPadreProceso1 img {
+      width: 250px; }
+    .seccionProceso .contenedorPadreProceso1 .hijoProceso {
+      width: 250px;
+      margin: 30px 0;
+      padding: 0; }
+  .seccionProceso .contenedorPadreProceso2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    .seccionProceso .contenedorPadreProceso2 img {
+      width: 250px; }
+    .seccionProceso .contenedorPadreProceso2 .hijoProceso {
+      width: 250px;
+      margin: 30px 0;
+      padding: 0; }
+  .fondoError {
+    margin: 40% 3%; }
+    .fondoError section {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-template-areas: "error"; }
+      .fondoError section .error img {
+        width: 300px;
+        height: auto; }
+      .fondoError section .error h1 {
+        font-size: 3.5rem; }
+      .fondoError section .error h2 {
+        font-size: 2.5rem; }
+      .fondoError section .error p {
+        font-size: 1rem; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  h1 {
+    font-size: 3rem;
+    padding: none;
+    margin: 150px 7% 5% 7%; }
+  h2 {
+    font-size: 1.5rem; }
+  .margenesNav {
+    padding: 3%; }
+    .margenesNav img {
+      width: 133%;
+      height: auto; }
+  footer {
+    height: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 0.8fr 1fr 1.5fr 0.5fr;
+    gap: 15px 0px;
+    justify-items: center;
+    grid-template-areas: ". logo ." ". contacto ." ". mediosdepago ." ". ubicacion ." ". derechosreserv ."; }
+    footer h3 {
+      padding: 0; }
+    footer .logoFooter {
+      text-align: center; }
+      footer .logoFooter img {
+        width: 142px;
+        height: 64px; }
+    footer .logoFooter img {
+      width: 142px;
+      height: 64px; }
+    footer .redesSociales {
+      text-align: center;
+      margin-left: 0; }
+    footer .mediosdePago {
+      text-align: center; }
+    footer .ubicacion {
+      text-align: center; }
+  .ventajasReciclaje {
+    text-align: center;
+    margin-top: 10%;
+    height: 500px;
+    background-image: url(../multimedia/so-white.png);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px 0px;
+    grid-template-areas: ". tituloVentaja tituloVentaja tituloVentaja tituloVentaja ." ". variado variado sostenible sostenible ." ". barato barato etico etico ."; }
+    .ventajasReciclaje h2 {
+      grid-area: tituloVentaja;
+      color: #cb997e;
+      align-self: center; }
+  .seccionConFrase {
+    margin: 25% 5% 15% 5%;
+    height: 100px; }
+    .seccionConFrase .frase {
+      font-size: 1.5rem; }
+  .seccionPackaging {
+    margin: 0; }
+    .seccionPackaging div {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .seccionPackaging div img {
+        width: 300px;
+        height: auto;
+        margin: 3% 0; }
+  .seccionProductos {
+    margin: 0 7%;
+    padding: 0; }
+    .seccionProductos .contenedorDeProductos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+  .seccionComoMedirse .especificacionesMedidas {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .seccionComoMedirse .especificacionesMedidas img {
+      width: 100%; }
+    .seccionComoMedirse .especificacionesMedidas .especificacionesHijo2 {
+      width: 400px;
+      height: 540px;
+      margin: 2rem 0; }
+  .seccionProceso img {
+    margin-bottom: 0; }
+  .seccionProceso .contenedorPadreProceso1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0; }
+    .seccionProceso .contenedorPadreProceso1 .hijoProceso {
+      width: 500px;
+      margin: 50px 0;
+      padding: 0; }
+  .seccionProceso .contenedorPadreProceso2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    .seccionProceso .contenedorPadreProceso2 .hijoProceso {
+      width: 500px;
+      margin: 50px 0;
+      padding: 0; }
+  .fondoError {
+    margin: 10% 7%; }
+    .fondoError section {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-template-areas: "error"; }
+      .fondoError section .error img {
+        width: 400px;
+        height: auto; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1250px) {
+  h1 {
+    font-size: 4rem;
+    padding: none;
+    margin: 150px 5% 5% 5%; }
+  h2 {
+    font-size: 1.5rem; }
+  .margenesNav {
+    padding: 3%; }
+    .margenesNav img {
+      width: 133%;
+      height: auto; }
+  footer {
+    padding: 7% 17% 0 17%;
+    height: 30%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1.5fr 0.3fr;
+    gap: 0px 0px;
+    grid-template-areas: "logo contacto" "mediosdepago ubicacion" "derechosreserv derechosreserv"; }
+    footer h3 {
+      padding: 0; }
+    footer .logoFooter {
+      text-align: left; }
+      footer .logoFooter img {
+        width: 142px;
+        height: 64px; }
+    footer .logoFooter img {
+      width: 142px;
+      height: 64px; }
+    footer .redesSociales {
+      text-align: left;
+      margin-left: 0; }
+    footer .mediosdePago {
+      text-align: left; }
+    footer .ubicacion {
+      text-align: left;
+      margin-bottom: 5%; }
+  .ventajasReciclaje {
+    text-align: center;
+    margin-top: 10%;
+    height: 500px;
+    background-image: url(../multimedia/so-white.png);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px 0px;
+    grid-template-areas: ". tituloVentaja tituloVentaja tituloVentaja tituloVentaja ." ". variado variado sostenible sostenible ." ". barato barato etico etico ."; }
+    .ventajasReciclaje h2 {
+      grid-area: tituloVentaja;
+      color: #cb997e;
+      /* font-size:2rem; */
+      align-self: center; }
+  .seccionConFrase {
+    margin: 20% 5% 15% 5%;
+    height: 100px; }
+    .seccionConFrase .frase {
+      font-size: 1.5rem; }
+  .seccionPackaging div img {
+    width: 200px;
+    height: auto;
+    margin: 3% 1px; }
+  .seccionProductos {
+    margin: 0 7%;
+    padding: 0; }
+    .seccionProductos .contenedorDeProductos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+  .seccionComoMedirse .especificacionesMedidas {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .seccionComoMedirse .especificacionesMedidas img {
+      width: 100%; }
+    .seccionComoMedirse .especificacionesMedidas .especificacionesHijo2 {
+      width: 400px;
+      height: 540px;
+      margin: 2rem 0; }
+  .seccionProceso img {
+    margin-bottom: 0; }
+  .seccionProceso .contenedorPadreProceso1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0; }
+    .seccionProceso .contenedorPadreProceso1 .hijoProceso {
+      width: 500px;
+      margin: 50px 0;
+      padding: 0; }
+  .seccionProceso .contenedorPadreProceso2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    .seccionProceso .contenedorPadreProceso2 .hijoProceso {
+      width: 500px;
+      margin: 50px 0;
+      padding: 0; }
+  .fondoError {
+    margin: 10% 7%; }
+    .fondoError section {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-template-areas: "error"; }
+      .fondoError section .error img {
+        width: 400px;
+        height: auto; } }
+
+@media only screen and (min-width: 1251px) and (max-width: 1500px) {
+  h1 {
+    font-size: 4rem;
+    padding: none;
+    margin: 150px 5% 5% 5%; }
+  h2 {
+    font-size: 1.5rem; }
+  .margenesNav {
+    padding: 3%; }
+    .margenesNav img {
+      width: 133%;
+      height: auto; }
+  .seccionConFrase {
+    margin: 5% 5% 10% 5%;
+    height: 100px; }
+    .seccionConFrase .frase {
+      font-size: 1.5rem; }
+  .seccionPackaging div img {
+    width: 250px;
+    height: auto;
+    margin: 3% 1px; }
+  .seccionProductos {
+    margin: 0 7%;
+    padding: 0; }
+    .seccionProductos .contenedorDeProductos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+  .seccionComoMedirse .especificacionesMedidas {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .seccionComoMedirse .especificacionesMedidas img {
+      width: 100%; }
+    .seccionComoMedirse .especificacionesMedidas .especificacionesHijo2 {
+      width: 400px;
+      height: 540px;
+      margin: 2rem 0; }
+  .fondoError {
+    margin: 10% 7%; }
+    .fondoError section {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-template-areas: "error"; }
+      .fondoError section .error img {
+        width: 400px;
+        height: auto; } }
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  h1 {
+    font-size: 2.7rem;
+    padding: none;
+    margin: 150px 5% 5% 5%; }
+  h2 {
+    font-size: 1.3rem; }
+  footer {
+    margin-top: 20%; }
+  .margenesNav {
+    padding: 3% 7% !important; }
+    .margenesNav img {
+      width: 133px !important;
+      height: auto; }
+  .ventajasReciclaje {
+    text-align: center;
+    margin: 10% 5% 0 5%;
+    height: 1000px;
+    background-image: url(../multimedia/so-white.png);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 2fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas: "tituloMusica" "spotify" "palabrasMusica"; }
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px 0px;
+    grid-template-areas: "tituloVentaja" "variado" "sostenible" "barato" "etico"; }
+    .ventajasReciclaje article {
+      height: 200px;
+      padding-top: 20px; }
+      .ventajasReciclaje article i {
+        font-size: 4rem;
+        border: none;
+        color: #cb997e; }
+  .seccionPackaging {
+    margin: 30% 0; }
+    .seccionPackaging div {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .seccionPackaging div img {
+        width: 250px;
+        height: auto;
+        margin: 3% 0; }
   .seccionProductos {
     margin: 0 7%;
     padding: 0; }
@@ -656,6 +1061,8 @@ p {
 
 body {
   background-image: url(../multimedia/so-white.png); }
+  body h2 {
+    font-weight: 800; }
   body .botones {
     border-color: #cb997e;
     color: #cb997e; }

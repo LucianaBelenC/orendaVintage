@@ -1,0 +1,109 @@
+@media only screen and (min-width: 1251px) and (max-width: 1500px) {
+
+    // Estilos Generales
+    h1 {
+        font-size: 4rem;
+        padding: none;
+        margin: 150px 5% 5% 5%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .margenesNav {
+        padding: 3%;
+
+        img {
+            width: 133%;
+            height: auto;
+        }
+    }
+
+    // Seccion Inicio
+
+    .seccionConFrase {
+        margin: 5% 5% 10% 5%;
+        height: 100px;
+
+        .frase {
+            font-size: 1.5rem;
+        }
+    }
+
+    .seccionPackaging {
+
+        div {
+
+            img {
+                width: 250px;
+                height: auto;
+                margin: 3% 1px;
+            }
+        }
+
+    }
+
+    // Seccion Prendas
+
+    .seccionProductos {
+        margin: 0 7%;
+        padding: 0;
+
+        .contenedorDeProductos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    // Seccion Medidas
+
+    .seccionComoMedirse {
+
+        .especificacionesMedidas {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            img {
+                width: 100%;
+            }
+
+            .especificacionesHijo2 {
+                width: 400px;
+                height: 540px;
+                margin: 2rem 0;
+            }
+        }
+    }
+
+
+
+    // Pagina de Error 404
+
+    .fondoError {
+        margin: 10% 7%;
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "error";
+
+            .error {
+                img {
+                    width: 400px;
+                    height: auto;
+                }
+            }
+        }
+
+    }
+
+}

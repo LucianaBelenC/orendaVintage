@@ -1,11 +1,11 @@
-@media only screen and (max-width: 768px) {
-    // Estilos Generales
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
 
+    // Estilos Generales
 
     h1 {
         font-size: 3rem;
         padding: none;
-        margin-top: 150px;
+        margin: 150px 7% 5% 7%;
     }
 
     h2 {
@@ -88,13 +88,12 @@
         h2 {
             grid-area: tituloVentaja;
             color: $marron;
-            /* font-size:2rem; */
             align-self: center;
         }
     }
 
     .seccionConFrase {
-        margin: 30% 5% 5% 5%;
+        margin: 25% 5% 15% 5%;
         height: 100px;
 
         .frase {
@@ -102,26 +101,22 @@
         }
     }
 
-    .seccionMusica {
-        margin: 10% 13%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 2fr 1fr;
-        gap: 0px 0px;
-        grid-template-areas:
-            "tituloMusica"
-            "spotify"
-            "palabrasMusica";
+    .seccionPackaging {
+        margin: 0;
 
-        .tituloMusica {
-            text-align: center;
-        }
+    div {
 
-        .palabrasMusica {
-            text-align: center;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            width: 300px;
+            height: auto;
+            margin: 3% 0;
         }
     }
-
+}
 
     // Seccion Prendas
 
@@ -136,8 +131,6 @@
             justify-content: space-between;
         }
     }
-
-
 
     // Seccion Medidas
 
@@ -161,9 +154,6 @@
             }
         }
     }
-
-
-
 
     // Seccion Proceso
     .seccionProceso {
